@@ -4,6 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
+    "setup:clients": "git submodule update --init --recursive && pnpm --dir openapi-clients/typescript/api install && pnpm --dir openapi-clients/typescript/api run build && pnpm --dir openapi-clients/typescript/assets-api install && pnpm --dir openapi-clients/typescript/assets-api run build",
+    "predev": "pnpm run setup:clients",
+    "prebuild": "pnpm run setup:clients",
     "dev": "tsx src/index.ts",
     "build": "tsc -p .",
     "start": "node dist/index.js"

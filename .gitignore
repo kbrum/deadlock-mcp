@@ -4,5 +4,4 @@ dist
 package-lock.json
 .pnpm-store
 pnpm-debug.log*
-openapi-clients
 opencode.json
