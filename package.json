@@ -1,0 +1,36 @@
+{
+  "name": "deadlock-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p .",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbrum/deadlock-mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/kbrum/deadlock-mcp/issues"
+  },
+  "homepage": "https://github.com/kbrum/deadlock-mcp#readme",
+  "packageManager": "pnpm@10.24.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "assets_deadlock_api_client": "link:openapi-clients\\typescript\\assets-api",
+    "axios": "^1.13.6",
+    "deadlock_api_client": "link:openapi-clients\\typescript\\api",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
